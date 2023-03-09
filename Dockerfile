@@ -1,8 +1,7 @@
 FROM ubuntu
 MAINTAINER Christian Lück <christian@lueck.tv>
 
-RUN sudo apt-get update; \
-    sudo apt-get -y upgrade
+RUN sudo apt-get update
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
   nginx supervisor php5-fpm php5-cli php5-curl php5-gd php5-json \
